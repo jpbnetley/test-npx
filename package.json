@@ -1,6 +1,6 @@
 {
   "name": "@jpbnetley/test-npx",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "write custom npx commands",
   "main": "index.js",
   "publishConfig": {
