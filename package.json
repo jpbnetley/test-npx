@@ -6,8 +6,13 @@
   "publishConfig": {
     "registry":"https://npm.pkg.github.com"
   },
+  "bin": {
+    "testExec": "bin/cliTest.js",
+    "@jpbnetley/test-npx": "npm run testExec"
+},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testExec": "test"
   },
   "repository": {
     "type": "git",
