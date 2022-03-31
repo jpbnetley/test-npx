@@ -1,10 +1,10 @@
 {
   "name": "@jpbnetley/test-npx",
-  "version": "0.0.0",
+  "version": "0.0.0-dev",
   "description": "write custom npx commands",
   "main": "index.js",
   "publishConfig": {
-    "@jpbnetley:registry":"https://npm.pkg.github.com"
+    "registry":"https://npm.pkg.github.com"
   },
   "bin": "bin/cliTest.js",
   "scripts": {
