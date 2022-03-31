@@ -4,7 +4,7 @@
   "description": "write custom npx commands",
   "main": "index.js",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "@jpbnetley:registry":"https://npm.pkg.github.com"
   },
   "bin": {
     "testExec": "bin/cliTest.js",
