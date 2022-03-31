@@ -4,12 +4,13 @@
   "description": "write custom npx commands",
   "main": "index.js",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "bin": "bin/cliTest.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "testExec": "test"
+    "testExec": "test",
+    "nodemon": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/jpbnetley/test-npx/issues"
   },
-  "homepage": "https://github.com/jpbnetley/test-npx#readme"
+  "homepage": "https://github.com/jpbnetley/test-npx#readme",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "nodemon": "^2.0.15",
+    "npm": "^8.5.5"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
