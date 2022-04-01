@@ -1,5 +1,7 @@
 # test-npx
-write custom npx commands
+write custom npx commands.  
+___
+>In this example, generating a .npmrc file based on user input
 
 ## Resources
 
