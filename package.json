@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "testExec": "test",
     "nodemon": "nodemon",
-    "start":"npm run nodemon  bin/main.js"
+    "start": "npm run nodemon  bin/main.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,6 @@
     "npm": "^8.5.5"
   },
   "dependencies": {
-    "prompt-sync": "^4.2.0"
+    "readline-sync": "^1.4.10"
   }
 }

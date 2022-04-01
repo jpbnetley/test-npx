@@ -1,5 +1,5 @@
 const fs = require("fs")
-const prompt = require("prompt-sync")({ sigint: true });
+const prompt = require('readline-sync')
 
 /**
  * writes the content of the pat and repo properties
@@ -17,7 +17,7 @@ registry=https://registry.npmjs.org/
  * @returns {string} the user's personal access token
  */
 const promptForInput = () => {
-  const userPat = prompt("please enter your personal access token: ")
+  const userPat = prompt.question("please enter your personal access token: ")
 
   if (!userPat) {
     console.log('no input was entered, will now exit')
@@ -47,6 +47,7 @@ const appendNpmRc = (path, userPat) => {
 
   fs.appendFile(path, npmRcFileContent, 'utf8',
     err => {
+      console.error('error writing to file')
       if (err) throw err;
     });
 }
