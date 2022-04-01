@@ -44,8 +44,7 @@ const createNpmRc = (path, userPersonalAccessToken) => {
  */
 const appendNpmRc = (path, userPat) => {
   const npmRcFileContent = generateNpmRcContent(userPat)
-  //TODO: doesn't append at all
-  fs.appendFile(path, npmRcFileContent, 'utf8',
+  fs.appendFileSync(path, npmRcFileContent, 'utf8',
     err => {
       console.error('error writing to file')
       if (err) throw err;
