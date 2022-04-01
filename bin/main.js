@@ -7,9 +7,7 @@ const { setupNpmRc } = require('./util')
 const NPM_RC_FILE_PATH = `${homedir}/.npmrc`
 const doesNpmRcExist = fs.existsSync(NPM_RC_FILE_PATH)
 
-
-
-console.log("This script will generate an .npmrc file.")
+console.log("This script will generate a .npmrc file.")
 console.log('doesNpmRcExist', doesNpmRcExist)
 
 if (doesNpmRcExist) {
@@ -34,6 +32,6 @@ if (doesNpmRcExist) {
   }
 }
 
-console.log(`.npmrc file is created at: ${NPM_RC_FILE_PATH}`)
+setupNpmRc({ path: NPM_RC_FILE_PATH })
 
 process.exit(0)

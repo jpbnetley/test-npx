@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "testExec": "test",
-    "nodemon": "nodemon"
+    "nodemon": "nodemon",
+    "start":"npm run nodemon  bin/main.js"
   },
   "repository": {
     "type": "git",

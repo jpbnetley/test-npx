@@ -38,7 +38,7 @@ const createNpmRc = (path, userPersonalAccessToken) => {
 }
 
 /**
- * apends to an existing .npmrc file
+ * appends to an existing .npmrc file
  * @param {string} path to where the .npmrc file should be appended
  * @param {string} userPersonalAccessToken used to authenticate npm
  */
@@ -52,7 +52,8 @@ const appendNpmRc = (path, userPat) => {
 }
 
 /**
- * 
+ * prompts the user for their personal access token
+ * then creates / appends the .npmrc file
  * @param {object} param configuration object 
  *                       path: location to append / create the .npmrc file
  *                       append: false to override, true to append
@@ -63,6 +64,8 @@ const setupNpmRc = ({ path = '', append = false }) => {
   append
     ? appendNpmRc(path, userPat)
     : createNpmRc(path, userPat)
+
+  console.log(`.npmrc file is created at: ${path}`)
 }
 
 module.exports = {
