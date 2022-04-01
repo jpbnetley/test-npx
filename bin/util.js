@@ -1,5 +1,8 @@
+const fs = require("fs")
+const prompt = require("prompt-sync")({ sigint: true });
+
 /**
- * 
+ * writes the content of the pat and repo properties
  * @param {string} personalAccessToken that grants the pc access to npm
  * @returns {string} content to be written to the npmrc file
  */
