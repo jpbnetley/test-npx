@@ -4,7 +4,7 @@ ___
 >In this example, generating a .npmrc file based on user input
 
 ## How to use
-To run the npx command, use `npx github:jpbnetley/test-npx`
+To run the npx command, use ` npx github:@jpbnetley/test-npx`
 
 ## Resources
 - [How to create a basic npx command-line library](https://dev.to/9zemian5/basic-npx-command-line-tool-45k4)
