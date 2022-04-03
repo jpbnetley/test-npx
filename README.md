@@ -11,4 +11,4 @@ write custom npx commands
 
 
 ## How to use
-To run the npx command, use `npx github:jpbnetley/test-npx`
+To run the npx command, use ` npx github:@jpbnetley/test-npx`
