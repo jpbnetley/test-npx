@@ -2,7 +2,7 @@
 const homedir = require('os').homedir();
 const fs = require("fs")
 const prompt = require('readline-sync')
-const { setupNpmRc } = require('./util')
+const { setupNpmRc } = require('../utils/npm-rc')
 
 const NPM_RC_FILE_PATH = `${homedir}/.npmrc`
 const doesNpmRcExist = fs.existsSync(NPM_RC_FILE_PATH)
