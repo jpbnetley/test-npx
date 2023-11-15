@@ -3,6 +3,7 @@
   "version": "0.0.0-dev",
   "description": "write custom npx commands",
   "main": "index.js",
+  "type": "module",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
@@ -11,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "testExec": "test",
     "nodemon": "nodemon",
-    "start": "npm run nodemon src/bin/index.js"
+    "start": "npm run nodemon src/bin/index.mjs"
   },
   "repository": {
     "type": "git",
