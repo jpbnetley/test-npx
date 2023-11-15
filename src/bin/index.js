@@ -14,12 +14,11 @@ const args = process.argv.slice(2, process.argv.length)
 
 const action = args[0]// first argument
 
-console.log({args, action});
-
 switch (action) {
   case undefined: main()
     break
   case 'bash:log': exec('sh src/bin/bash/log.sh', handleBashExecution)
+  break
   default: console.log('no action found')
     break
 }
