@@ -6,12 +6,15 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "bin": "bin/main.js",
+  "bin": {
+    "@jpbnetley/test-npx": "bin/main.js",
+    "bash:log": "bin/bash/log.sh"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "testExec": "test",
     "nodemon": "nodemon",
-    "start": "npm run nodemon  bin/main.js"
+    "start": "npm run nodemon bin/main.js"
   },
   "repository": {
     "type": "git",
@@ -26,8 +29,8 @@
   "homepage": "https://github.com/jpbnetley/test-npx#readme",
   "devDependencies": {
     "install": "^0.13.0",
-    "nodemon": "^2.0.15",
-    "npm": "^8.5.5"
+    "nodemon": "^3.0.1",
+    "npm": "^10.2.3"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
